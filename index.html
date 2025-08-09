@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<body>
+<script>
+    window.sodium = {
+        onload: function (sodium) {
+            let h = sodium.crypto_generichash(64, sodium.from_string('test'));
+            console.log(sodium.to_hex(h));
+        }
+    };
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/libsodium-wrappers/0.5.2/sodium.min.js" integrity="sha512-WVg6DDUF676j0oHA9N3fqGMEslqBgvm97/gdW6Nxw209TuRZ6ekWcw6VFsoXOYIJpMOmqa4xBfuUnu6G83ZtAQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+</body>
+</html>
+
+
